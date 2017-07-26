@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RiLo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+
+  <body>
+  	<div id="nav">
+ 		 	<ul>
+  			<li> <a href="/">home</a> </li>
+  			<span> | </span>
+  			<li> <a href="collection.html">lifestyle</a></li>
+  			<span> | </span>
+  			<li> <a href="travel.html">travel</a></li>
+  			<span> | </span>
+  			<li> <a href="relationship.html">relationship</a></li>
+  			<span> | </span>
+  			<li> <a href="fitness.html">fitness</a></li>
+  			<span> | </span>
+  			<li> <a href="about.html">about</a></li>
+  		</ul>
+    </div>
+  	<h1 style="padding: 10px 20px 10px 20px;">
+      <span style="padding-left: 3px;font-family:Trebuchet MS;letter-spacing: 2px;color: #C0C0C0 ; border:3px solid #C0C0C0 ">RiLo</span>
+      <span style="font-weight:100">: <%= @title %></span>
+    </h1>
+
+    <hr></hr>
+
+    <div id="nav">
+      <ul class="a">
+        <li>
+          <a href="https://www.instagram.com/dies.ist.uns/" target="_blank"> <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        </li>
+        <span> | </span>
+        <li>
+          <a href="https://www.instagram.com/dies.ist.uns/" target="_blank"> <i class="fa fa-pinterest-square fa-2x" aria-hidden="true"></i></a>
+        </li>
+        <span> | </span>
+        <li>
+          <a href="https://www.instagram.com/dies.ist.uns/" target="_blank"> <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        </li>
+        <span> | </span>
+        <li>
+          <a href="https://www.instagram.com/dies.ist.uns/" target="_blank"> <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    <hr></hr>
+    </div>
+  <%= yield %>
+  </body>
+
+  <footer>
+  love is grander idea than anyone person can come to define, Love is an idea we all have brought forth.
+    Some copyright info or perhaps some author
+    info for an &lt;article&gt;?
+  </footer>
+</html>

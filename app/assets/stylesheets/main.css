@@ -1,0 +1,160 @@
+html, body {
+  font-family: Trebuchet MS;
+  width: 75%;
+  height: 100%;
+  margin-left:13%;
+  margin-right:13%;
+  text-align:center;
+  line-height:120%;
+  color:#404040 ;
+  font-weight:100px;
+
+
+
+}
+
+h1 {
+
+  font-size: 48px;
+  font-family:Trebuchet MS;
+}
+
+
+p {
+
+  font-family:Trebuchet MS;
+  font-size: 18px;
+  padding-right:50px;
+  padding-left: 50px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color:#404040;
+  margin:5px;
+
+}
+
+p.indexabout {
+
+  font-family:Trebuchet MS;
+  font-size: 12px;
+  padding-right:20px;
+  padding-left: 20px;
+  padding-top: 2px;
+  padding-bottom: 50px;
+  color:#404040;
+  margin:5px;
+
+}
+
+h3.left {
+  text-align:left;
+  font-size: 1.5rem;
+  margin-left 50px;
+  font-weight:100;
+  text-decoration:none;
+  color:#404040  ;
+
+}
+h6.lightgray {
+text-align:none;
+color:#C0C0C0;
+font-size: 11px;
+}
+
+div {
+  padding-right: 30px;
+  padding-left: 30px
+  height: 50%;
+  width: 100%;
+
+
+}
+hr {
+  margin:2px;
+  padding:.10px;
+  background-color: #C0C0C0;
+}
+
+div.post{
+border: 0px solid #C0C0C0;
+padding-top:0px;
+padding-bottom:0px;
+font-size: 12px;
+text-align: left;
+padding-top: 4px;
+}
+ul.a{
+list-style-type: none;
+line-height:20px;
+font-size:1.6rem;
+padding: 2px;
+margin: 2px;
+}
+
+video {
+  background-color: #000000;
+  border: 2px solid black;
+}
+img.left{
+clear:left;
+float: left;
+margin: 10px;
+width: 150px;
+border-right: 1.25px solid #C0C0C0;
+margin-right: 15px;
+padding-right: 15px;
+}
+.container {
+  display: flex;
+}
+footer{
+margin:50px;
+}
+
+.main {
+
+  font-family: monospace;
+  text-align: center;
+}
+
+#nav li {
+    color: #C0C0C0 ;
+    display:inline;
+
+    text-decoration:none;
+    text-align:center;
+    font-size:16px;
+}
+a{
+	color:#C0C0C0 ;
+	text-decoration:none;
+
+	}
+#nav a:hover {
+text-decoration:none;
+color: #404040 ;
+}
+
+.nav h1 {
+  padding-left: 20px;
+    display:inline;
+  text-align:center;
+  text-decoration:none
+}
+
+h2. a:hover{
+text-decoration:none;
+color:#C0C0C0 ;
+}
+#logo{
+	color:gray;
+	border:1px black;
+	}
+hr.line {
+    border: 1px;
+    color: #C0C0C0;
+    height:1px;
+    width:70%;
+    margin:1px;
+    padding:1px;
+  }
