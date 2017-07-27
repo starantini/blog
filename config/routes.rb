@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     resources :articles
   get 'home' => 'welcome#home'
   get 'about' => 'welcome#about'
-  get 'collection' => 'welcome#collection'
+  get 'lifestyle' => 'welcome#lifestyle'
   get 'fitness' => 'welcome#fitness'
   get 'relationship' => 'welcome#relationship'
   get 'travel' => 'welcome#travel'

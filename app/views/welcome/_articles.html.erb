@@ -1,0 +1,11 @@
+<% @articles.each do |article| %>
+  <div class="article">
+    <div class="img">
+      <img src="assets/usimage.jpg" class="post"/>
+    </div>
+    <div class="post">
+      <h3><%= article.title %></h3>
+      <p><%= article.text %></p>
+    </div>
+  </div>
+<% end %>

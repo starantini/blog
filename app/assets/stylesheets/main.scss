@@ -49,10 +49,6 @@ p.indexabout {
 h3.left {
   text-align:left;
   font-size: 1.5rem;
-  margin-left 50px;
-  font-weight:100;
-  text-decoration:none;
-  color:#404040  ;
 
 }
 h6.lightgray {
@@ -63,11 +59,7 @@ font-size: 11px;
 
 div {
   padding-right: 30px;
-  padding-left: 30px
-  height: 50%;
   width: 100%;
-
-
 }
 hr {
   margin:2px;
@@ -77,11 +69,11 @@ hr {
 
 div.post{
 border: 0px solid #C0C0C0;
-padding-top:0px;
-padding-bottom:0px;
 font-size: 12px;
 text-align: left;
-padding-top: 4px;
+display: inline-block;
+width: 70%;
+
 }
 ul.a{
 list-style-type: none;
@@ -95,14 +87,13 @@ video {
   background-color: #000000;
   border: 2px solid black;
 }
-img.left{
-clear:left;
-float: left;
-margin: 10px;
-width: 150px;
-border-right: 1.25px solid #C0C0C0;
-margin-right: 15px;
-padding-right: 15px;
+div.img{
+  width: 25%;
+  border-right: 1.25px solid #C0C0C0;
+  display: inline-block;
+}
+img.post{
+  width: 100%;
 }
 .container {
   display: flex;
@@ -136,13 +127,12 @@ color: #404040 ;
 }
 
 .nav h1 {
-  padding-left: 20px;
     display:inline;
   text-align:center;
   text-decoration:none
 }
 
-h2. a:hover{
+a:hover{
 text-decoration:none;
 color:#C0C0C0 ;
 }
