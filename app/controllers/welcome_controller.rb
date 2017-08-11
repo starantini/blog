@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
 
   def home
-    @title = 'risinglove'
+    @title = 'love'
   end
 
   def about
@@ -10,26 +10,30 @@ class WelcomeController < ApplicationController
 
   def lifestyle
     @title = 'lifestyle'
-    load_articles
+    load_posts
   end
 
   def fitness
     @title= 'fitness'
-    load_articles
+    load_posts
   end
 
   def relationship
     @title= 'relationship'
-    load_articles
+    load_posts
   end
 
   def travel
     @title= 'travel'
-    load_articles
+    load_posts
+  end
+  def index
+    @title= 'all posts'
   end
 
+
   private
-  def load_articles
-    @articles = Article.where(category: @title).order(created_at: :desc)
+  def load_posts
+    @posts = Post.where(category: @title).order(created_at: :desc)
   end
 end

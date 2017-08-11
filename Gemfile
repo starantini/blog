@@ -62,3 +62,4 @@ source 'https://rails-assets.org' do
 end
 gem 'haml'
 gem 'jquery-rails'
+gem 'carrierwave', '~> 1.0'

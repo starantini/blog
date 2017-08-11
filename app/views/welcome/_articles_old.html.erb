@@ -1,0 +1,21 @@
+<% @articles.each do |article| %>
+<div class="container-fluid">
+  <div class="article">
+    <div class="row" style="padding:10px;">
+      <div class="col-md-4" style="padding-right:0%">
+        <div class="img">
+          <img src="assets/usimage.jpg" class="post"/>
+          <%= article.image%>
+        </div>
+      </div>
+      <div class="col-md-8" style="padding-left:15px">
+        <p class="light"style="display: inline"> <%= article.title %> by <%= article.author %></p>
+        <hr></hr>
+        <div class="post">
+          <p><%= article.text %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>

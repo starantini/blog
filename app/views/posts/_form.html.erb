@@ -1,0 +1,32 @@
+<%= form_for @post do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <p>
+  <%= f.label :category %><br>
+  <%= f.select :category, [['Lifestyle', :lifestyle], ['Travel', :travel], ['Relationship', :relationship], ['Fitness', :fitness]] %>
+  </p>
+  <p>
+  <%= f.label :author %><br>
+  <%= f.text_field :author %>
+  </p>
+
+  <div>
+    <%= f.label :body %>
+    <%= f.text_area :body, :size => "30x10" %>
+  </div>
+  <div>
+    <%= f.label :spanishbody %>
+    <%= f.text_area :spanishbody, :size => "30x10" %>
+  </div>
+
+  <div>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+  <%= f.submit %>
+
+<%= link_to 'All posts', posts_path %>
+<% end %>
