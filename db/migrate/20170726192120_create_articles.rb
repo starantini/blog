@@ -1,13 +1,13 @@
-# class CreateArticles < ActiveRecord::Migration[5.1]
-#   def change
-#     create_table :articles do |t|
-#       t.string :title
-#       t.text :text
-#       t.string :category
-#       t.string :author
-#       t.string :image
-#
-#       t.timestamps
-#     end
-#   end
-# end
+class CreateArticles < ActiveRecord::Migration[5.1]
+  def change
+    create_table :articles do |t|
+      t.string :title
+      t.text :text
+      t.string :category
+      t.string :author
+      t.string :image
+
+      t.timestamps
+    end
+  end
+end
