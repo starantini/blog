@@ -31,6 +31,10 @@ class WelcomeController < ApplicationController
     @title= 'all posts'
   end
 
+  def recomendations
+    @title= "recomendations"
+  end
+
 
   private
   def load_posts
