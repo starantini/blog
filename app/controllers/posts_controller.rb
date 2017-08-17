@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update]
-  http_basic_authenticate_with name: "Steve", password: "Estefania", except: [:index, :show]
-
+  
+  before_action :require_user, only: [:index, :show]
   def index
     @posts = Post.order('created_at DESC')
   end
@@ -49,4 +49,5 @@ class PostsController < ApplicationController
   def set_post
     @post = Post.find(params[:id])
   end
+
 end
