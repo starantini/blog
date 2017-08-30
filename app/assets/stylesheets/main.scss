@@ -1,33 +1,41 @@
 html, body {
-  font-family: helvetica, verdana;
+  font-family: "OpenSans-Light" , Helvetica;
   width: 80%;
   height: 100%;
   margin-left:10%;
   margin-right:10%;
   text-align:center;
   line-height:120%;
-  color:#404040 ;
-  font-weight:light;
+  color:#444444;
+  font-weight:300;
+}
 
   @font-face {
       font-family: "Hero Light";
       src: url('Hero Light.otf');
  }
+ @font-face {
+     font-family: "MyriadPro-Regular";
+     src: url('MyriadPro-Regular.otf');
+}
 
-
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url('OpenSans-Light.ttf');
+}
 
 h1.logo{
  text-align: center;
  margin-left:0px;
  margin-right:0px;
  letter-spacing: 2px;
- color: #C0C0C0 ;
+ color: #777777;
  font-size: 40;
  font-weight:normal;
 
 }
 
-}
+
 
 h1 {
 
@@ -42,9 +50,13 @@ h3.left {
 }
 h6.lightgray {
 text-align:none;
-color:#C0C0C0;
+color:#777777;
 font-size: 11px;
 font-family: inherit;
+}
+h5{
+font-size: 20px;
+
 }
 
 
@@ -52,13 +64,13 @@ p {
 
   font-family: inherit;
   font-size: 18px;
-  color:#404040;
+  color:#444444;
   margin:5px;
 
 }
 p.light {
-color:#C0C0C0;
-font-size: 16px;
+color:#777777;
+font-size: 13px;
 font-family: inherit;
 font-weight:lighter;
 
@@ -73,7 +85,7 @@ p.indexabout {
   padding-left: 20px;
   padding-top: 2px;
   padding-bottom: 50px;
-  color:#404040;
+  color:#444444;
   margin:5px;
 
 }
@@ -87,24 +99,24 @@ div.articles {
 }
 
 div.post{
-border: 0px solid #C0C0C0;
+border: 0px solid #777777;
 font-size: 12px;
-text-align: left;
+text-align: center;
 word-wrap: break-word;
 overflow-wrap: break-word;
-padding-left: 0px;
-padding-top: 0px;
+padding-left: 0%;
+padding-right: 0%;
+
 
 }
 div.img{
   width: 100%;
-  border-right: 1.25px solid #C0C0C0;
   display: inline-block;
 }
 img.post{
-  width:100%;
+  width: 100%;
   height: 100%;
-  padding-right: 15px;
+
 }
 
 textarea#message_area {
@@ -126,23 +138,23 @@ video {
 }
 
 #nav li {
-    color: #C0C0C0 ;
+    color: #777777 ;
     display:inline;
     text-decoration:none;
     text-align:left;
     font-size:16px;
 }
 a{
-	color:#C0C0C0 ;
+	color:#777777 ;
 	text-decoration:none;
 
 	}
 a.nothing{
-  color: #404040;
+  color: #444444;
 }
 #nav a:hover {
 text-decoration:none;
-color: #404040 ;
+color: #C0C0C0 ;
 }
 
 .nav h1 {
@@ -153,7 +165,7 @@ color: #404040 ;
 
 a:hover{
 text-decoration:none;
-color:#C0C0C0 ;
+color:#444444 ;
 }
 #logo{
 	color:gray;
@@ -162,18 +174,18 @@ color:#C0C0C0 ;
 hr {
     margin:2px;
     padding:.10px;
-    background-color: #C0C0C0;
+    background-color: #777777;
   }
 hr.line {
     border: 1px;
-    color: #C0C0C0;
+    color: #777777;
     height:1px;
     width:70%;
     margin:1px;
     padding:1px;
   }
 footer{
-    color:#C0C0C0;
+    color:#777777;
     font-size: 14px;
     font-family: inherit;
     font-weight:lighter;

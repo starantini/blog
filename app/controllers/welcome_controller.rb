@@ -1,8 +1,8 @@
 class WelcomeController < ApplicationController
 
   def home
-    @title = 'love'
-    @posts = Post.paginate(page: params[:page], per_page: 10).order('created_at DESC')
+    @title = 'home'
+    @posts = Post.paginate(page: params[:page], per_page: 5).order('created_at DESC')
     puts @posts.count
     respond_to do |format|
       format.html
@@ -47,6 +47,20 @@ end
     @title= 'recomends'
   end
 
+  def download_png
+      send_file(
+          "#{Rails.root}/public/Bannershot1.png",
+          filename: "Bannershot1.png",
+          type: "application/png"
+      )
+  end
+  def download_mp3
+      send_file(
+          "#{Rails.root}/public/songforfamily.mp3",
+          filename: "songforfamily.mp3",
+          type: "application/mp3"
+      )
+  end
 
   private
   def load_posts

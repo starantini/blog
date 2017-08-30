@@ -6,6 +6,6 @@ class Post < ApplicationRecord
                   length: { minimum: 4 }
   validates_presence_of :author, :body
 
-  self.per_page = 10
+  self.per_page = 5
 
 end

@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  # before_action :set_post, only: [:show, :edit, :update]
+  before_action :set_post, only: [:show, :edit, :update]
 
   before_action :require_user, only: [:index, :show]
   def index
@@ -23,11 +23,13 @@ class PostsController < ApplicationController
   end
 
   def edit
+    @post = Post.find(params[:id])
   end
 
   def update
-    if @post.update_attributes(post_params)
-      redirect_to post_path(@post)
+    @post = Post.find_by_id(params[:id])
+    if @post.try(:update_attributes, post_params)
+      redirect_to posts_path(@post)
     else
       render :edit
     end
@@ -43,7 +45,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:category, :title, :body,:spanishbody, :image, :author)
+    params.require(:post).permit(:id,:category, :title, :body,:spanishbody, :image, :author)
   end
 
   def set_post
