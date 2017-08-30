@@ -52,6 +52,16 @@
             <img src="assets/recomend.jpg" class="post"/>
           </div>
           <p class="light"> Join Us, and access our Free content</p>
+            <div class="form-group">
+              <%= form_for(@subscriber) do |f| %>
+            <div class="input-group">
+                <%= f.text_field :email, class: 'form-control-xsm', placeholder: '@email.com' %>
+                <span class="input-group-btn">
+                  <input class="btn-sm btn-secondary" type="submit" value="subscribe"></span>
+            </div>
+            <% if flash[:notice] %>
+            <div class="notice"><%= flash[:notice] %></div>
+          <% end %>
         </div>
       </div>
     </div>
