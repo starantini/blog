@@ -7,13 +7,13 @@ class SubscribersController < ApplicationController
 
       def create
         @subscriber = Subscriber.new(subscriber_params)
-        respond_to do |format|
+          # respond_to do |format|
           if @subscriber.save
             redirect_to '/downloads'
             # Sends email to user when user is created.
             OenomelMailer.sample_email(@subscriber).deliver
             # SendEmailJob.set(wait: 20.seconds).perform_later(@subscriber)
-            # format.html { redirect_to @subscriber, notice: 'User was successfully created.' }
+            # format.html { redirect_to '/downloads', notice: 'User was successfully created.' }
             # format.json { render :show, status: :created, location: @subscriber }
           else
             flash[:notice] = "Enter an Email address to access our original content"
@@ -22,7 +22,6 @@ class SubscribersController < ApplicationController
             # format.json { render json: @subscriber.errors, status: :unprocessable_entity }
 
       end
-    end
     end
     def subscriber_params
       params.require(:subscriber).permit(:email)
