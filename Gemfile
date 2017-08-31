@@ -66,3 +66,7 @@ gem 'carrierwave', '~> 1.0'
 
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
+
+gem 'mailgun-ruby', '~>1.1.6', require: 'mailgun'
+gem 'delayed_job_active_record'
+gem "figaro"
