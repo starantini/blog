@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
   def home
     @title = 'home'
     @subscriber = Subscriber.new(params[:subscriber])
-    @posts = Post.paginate(page: params[:page], per_page: 5).order('created_at DESC')
+    @posts = Post.paginate(page: params[:page], per_page: 7).order('created_at DESC')
     puts @posts.count
     respond_to do |format|
       format.html

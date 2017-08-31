@@ -14,6 +14,7 @@ class SubscribersController < ApplicationController
         redirect_to '/'
 
       end
+
     end
     def subscriber_params
       params.require(:subscriber).permit(:email)
