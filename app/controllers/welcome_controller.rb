@@ -47,6 +47,9 @@ end
   def recomendations
     @title= 'recomends'
   end
+  def downloads
+    @title= 'free content'
+  end
 
   def download_png
       send_file(
