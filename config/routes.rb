@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'downloads' => 'welcome#downloads'
   get 'recomendations' => 'welcome#recomendations'
   get 'signup'  => 'users#new'
+  delete 'Destroy' => 'posts#destroy'
       resources :users
   get '/login' => 'sessions#new'
   post 'login' => 'sessions#create'
