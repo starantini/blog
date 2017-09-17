@@ -13,7 +13,9 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap
 //= require jquery
 //= require tether
-//= require bootstrap
+
+
 $('.dropdown-toggle').dropdown()
