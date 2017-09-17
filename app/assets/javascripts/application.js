@@ -14,8 +14,6 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
+$('.dropdown-toggle').dropdown()
 //= require jquery
 //= require tether
-
-
-$('.dropdown-toggle').dropdown()
