@@ -16,3 +16,4 @@
 //= require jquery
 //= require tether
 //= require bootstrap
+$('.dropdown-toggle').dropdown()

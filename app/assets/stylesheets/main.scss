@@ -125,11 +125,12 @@ textarea#message_area {
 }
 
 ul.a{
+display:inline-block;
 list-style-type: none;
 line-height:20px;
 font-size:1.6rem;
-padding: 2px;
-margin: 2px;
+padding: 0px;
+margin: 0px;
 }
 
 video {
@@ -139,9 +140,9 @@ video {
 
 #nav li {
     color: #777777 ;
-    display:inline;
+    display:inline-block;
     text-decoration:none;
-    text-align:left;
+
     font-size:16px;
 }
 a{
@@ -184,6 +185,10 @@ hr.line {
     margin:1px;
     padding:1px;
   }
+dropdownmenu.btn.btn-secondary{
+border-color:#255255;
+
+}
 footer{
     color:#777777;
     font-size: 14px;

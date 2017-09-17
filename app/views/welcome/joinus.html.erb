@@ -1,0 +1,16 @@
+<div class="post" style="text-align: center">
+  <h5> Join Us </h5>
+  <div class="img">
+    <img src="assets/joinus-web.jpg" class="post" style="max-width: 300px"/>
+  </div>
+  <p class="light"> Join Us, and access our Free content</p>
+    <div class="form-group">
+      <%= form_for(@subscriber) do |f| %>
+    <div class="input-group">
+        <%= f.text_field :email, class: 'form-control-xsm', placeholder: 'email' %>
+        <span class="input-group-btn">
+          <input class="btn btn-secondary btn-sm" type="submit" value="subscribe"></span>
+    </div>
+  <% end %>
+</div>
+</div>

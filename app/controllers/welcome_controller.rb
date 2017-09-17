@@ -48,9 +48,17 @@ end
     @title= 'recomends'
   end
   def downloads
-    @title= 'free content'
+    @title= 'downloads'
   end
-
+  def joinus
+    @subscriber = Subscriber.new(params[:subscriber])
+  end
+  def store
+    @title= 'store'
+  end
+  def steve
+    @title= 'steve'
+  end
   def download_png
       send_file(
           "#{Rails.root}/public/Bannershot1.png",
