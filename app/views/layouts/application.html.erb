@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>æ</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'false'  %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
 
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'false' %>
-
+    <%= javascript_include_tag 'application', 'data-turbolinks-eval' => false %>
+    <%= javascript_include_tag params[:controller] %>
   </head>
 
   <body style="padding-top: 20px">
@@ -35,7 +35,7 @@
 
           <li>
              <div class="dropdown">
-               <a class="btn btn-secondary btn-sm dropdown-toggle" style="border-color:#fff;padding:3px; margin:2px" role="button" style" border-color:#255255" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> posts
+               <a class="btn btn-secondary btn-sm dropdown-toggle" style="border-color:#fff;padding:3px; margin:2px" role="button" style" border-color:#255255" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">posts
                </a>
                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                  <a class="dropdown-item" href="lifestyle">lifestyle</a>
