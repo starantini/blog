@@ -15,7 +15,6 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require tether
-//= require bootstrap
 //= require bootstrap-sprockets
 //= require bootstrap/dropdown
 // = require turbolinks
