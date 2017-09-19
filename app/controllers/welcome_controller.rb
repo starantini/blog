@@ -1,7 +1,7 @@
 class WelcomeController < ApplicationController
 
   def home
-    @title = 'home'
+    @title = 'us'
     @subscriber = Subscriber.new(params[:subscriber])
     @posts = Post.paginate(page: params[:page], per_page: 7).order('created_at DESC')
     puts @posts.count
@@ -51,6 +51,7 @@ end
     @title= 'downloads'
   end
   def joinus
+    @title= 'subscribe'
     @subscriber = Subscriber.new(params[:subscriber])
   end
   def store

@@ -70,3 +70,5 @@ gem 'bootstrap-will_paginate'
 gem 'mailgun-ruby', '~>1.1.6', require: 'mailgun'
 gem 'delayed_job_active_record'
 gem "figaro"
+
+gem 'jquery-turbolinks'
