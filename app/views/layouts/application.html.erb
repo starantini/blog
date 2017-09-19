@@ -9,6 +9,7 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
     <%= javascript_include_tag 'application', 'data-turbolinks-eval' => false %>
+    <script language="javascript" type="text/javascript" src="local_path/jquery.js" onload="window.$ = window.jQuery = module.exports;"></script>
 
   </head>
 
@@ -19,7 +20,7 @@
   	  <div id="nav" class="dropdown">
         <div>
 <li>
-            <a class="btn btn-secondary btn-sm dropdown-toggle" style="border-color:#fff;text-align:inherit; padding:3px; margin:2px" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="btn btn-secondary btn-sm dropdown-toggle" style="border-color:#fff;text-align:inherit; padding:3px; margin:2px" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
               .us
             </a>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -78,18 +79,6 @@
 
     </div>
   </div>
-  <!-- <div class="container-fluid" style="padding-right:0%; padding-left:0%;" >
-    <div class="row">
-      <div class="col-md-6" style="padding-left: 25%; height: 60px">
-      <a href="/"><img src="assets/logo.jpg" style="max-width:200px"/></a>
-      </div>
-      <div class="col-md-6" style="padding-right:40%; padding-left:0%; height: 60px">
-      <h1 style="padding-left: 20px"><%= @title %></h1>
-      </div>
-
-    </div>
-  </div> -->
-
     </div>
   </body>
     <%= yield %>
