@@ -5,14 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>oe</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'  %>
     <%= javascript_include_tag 'application', 'data-turbolinks-eval' => false %>
-    <script language="javascript" type="text/javascript" src="local_path/jquery.js" onload="window.$ = window.jQuery = module.exports;"></script>
 
   </head>
 
@@ -22,17 +20,19 @@
 
   	  <div id="nav" class="dropdown">
         <div>
-<li>
+          <li>
+            <div class="dropdown">
             <a class="btn btn-secondary btn-sm dropdown-toggle" style="border-color:#fff;text-align:inherit; padding:3px; margin:2px" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               .us
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" href="steve">steve</a>
               <a class="dropdown-item" href="Estefania">estefania</a>
               <a class="dropdown-item" href="about">contact</a>
               <a class="dropdown-item" href="recomendations">recomendations</a>
+              </div>
             </div>
-</li>
+          </li>
 
           <li>
              <div class="dropdown">
