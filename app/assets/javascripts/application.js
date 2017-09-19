@@ -14,11 +14,10 @@
 //= require_tree .
 //= require jquery
 //= require jquery.turbolinks
+// = require turbolinks
 //= require tether
 //= require bootstrap-sprockets
 //= require bootstrap/dropdown
-// = require turbolinks
-
 $(document).ready(function(){
        $('.dropdown-toggle').dropdown();
    });
