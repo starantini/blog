@@ -17,7 +17,7 @@
 // = require turbolinks
 //= require tether
 //= require bootstrap-sprockets
-//= require bootstrap/dropdown
+//= require bootstrap-dropdown
 $(document).ready(function(){
        $('.dropdown-toggle').dropdown();
    });
