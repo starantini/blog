@@ -11,13 +11,14 @@
         <span style="font-size: 20px; padding: 5px;"><%= post.title %></span>
         <span class="light" style="font-size:16px; color: #777777"> by <a href="about" style="text-decoration:underline"><%= post.author %></a></span>
         <span class="light" style="font-size:16px; color: #777777">  category: <a style="text-decoration:underline"><%= post.category %></a></span></p>
+
         <div class="post">
           <p ><%= post.body %></p>
         </div>
         <div class="post">
           <p style=" color:#C0C0C0"><%= post.spanishbody %></p>
         </div>
-
+        <span> <%= link_to "Link to Website", post.link, target: :_blank%></span>
  </div>
 <hr style="margin: 30px"></hr>
 <% end %>

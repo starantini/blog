@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   get 'recomendations' => 'welcome#recomendations'
   get 'store' => 'welcome#store'
   get 'steve' => 'welcome#steve'
+  get 'estefania' => 'welcome#estefania'
 
   get 'signup'  => 'users#new'
   delete 'Destroy' => 'posts#destroy'

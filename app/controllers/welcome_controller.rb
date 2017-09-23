@@ -60,6 +60,9 @@ end
   def steve
     @title= 'steve'
   end
+  def estefania
+    @title= 'estefania'
+  end
   def download_png
       send_file(
           "#{Rails.root}/public/Bannershot1.png",

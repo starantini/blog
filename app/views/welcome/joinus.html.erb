@@ -1,16 +1,39 @@
-<div class="post" style="text-align: center">
-  <h5> Join Us </h5>
-  <div class="img">
-    <img src="assets/joinus-web.jpg" class="post" style="max-width: 300px"/>
-  </div>
-  <p class="light"> Join Us, and access our Free content</p>
-    <div class="form-group">
-      <%= form_for(@subscriber) do |f| %>
-    <div class="input-group">
-        <%= f.text_field :email, class: 'form-control-xsm', placeholder: 'email' %>
-        <span class="input-group-btn">
-          <input class="btn btn-secondary btn-sm" type="submit" value="subscribe"></span>
+<h3 style="padding-top: 30px">Access our Original Content for Download</h3>
+<div class="container: fluid">
+
+  <div class="row" style="padding:10px;">
+    <div class="col-md-6" style="padding-right:4.75px">
+      <div class="img" style="border-right: .5px solid #C0C0C0">
+        <img src="assets/joinus.jpg" class="post" style="padding-right: 15px"/>
+      </div>
     </div>
-  <% end %>
-</div>
+    <div class="col-md-6" style="padding-left:0%">
+    <div style="text-align: left">
+      <p class="light" style=" padding-left:10px">
+        <div class="form-group">
+          <%= form_for(@subscriber) do |f| %>
+        <div class="input-group" style="padding:10px">
+            <%= f.text_field :email, class: 'form-control-xsm', placeholder: 'email' %>
+            <span class="input-group-btn">
+              <input class="btn btn-secondary btn-sm" type="submit" value="subscribe"></span>
+        </div>
+      <% end %> What to expect when you subscribe:
+      <ul>
+        <li> <a href="recomendations">Recommendations<a>...basically awesome stuff we have tried and enjoyed</li>
+
+        <li> Short mention to Latests <a href="lifestyle">Posts<a></li>
+
+        <li> Access to our original content available for download </li>
+
+        <li> Zero Spamming...we value our readers! </li>
+
+      </ul>
+      </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
 </div>
