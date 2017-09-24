@@ -9,4 +9,9 @@ end
 def require_user
   redirect_to '/login' unless current_user
 end
+# def admin
+# end
+# def is_admin?
+#   self.admin #returns a boolean
+# end
 end
