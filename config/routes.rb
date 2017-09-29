@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
       resources :subscribers
   root 'welcome#home'
   root to: 'posts#index'
@@ -26,7 +27,6 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get "welcome/download_png"
   get "welcome/download_mp3"
-
 
 # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
