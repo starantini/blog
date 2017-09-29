@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
   before_action :require_user, only: [:index, :show]
-  before_action :is_admin 
+  # before_action :is_admin 
   def index
     @posts = Post.order('created_at DESC')
   end
